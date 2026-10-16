@@ -1,0 +1,17 @@
+
+# A1: Fuse check
+
+V = float(input("Enter voltage (V): "))
+R = float(input("Enter resistance (ohm): "))
+ 
+if R <= 0:
+    print("Invalid resistance")
+else:
+    I = V / R
+    
+    print("Current =", I, "A")
+    if I > 2:
+        print("Fuse will blow")
+    else:
+        print("Circuit is safe")
+ 
